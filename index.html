@@ -60,8 +60,8 @@
       </div>
 
       <div id="p1" class="project visible">
-        <h3 data-key="p1_title">Automatización de pruebas con Selenium</h3>
-        <p data-key="p1_desc"></p>
+        <h3 data-key="p1_title">Urban Routes QA Automation / Automatización de pruebas con Selenium</h3>
+        <p data-key="p1_desc">Este proyecto automatiza pruebas de la aplicación web <strong>Urban Routes</strong>, simulando un flujo completo de pedido de taxi, incluyendo:<br><br><ul><li>Selección de ruta (origen y destino)</li><li>Selección de tarifa Comfort</li><li>Ingreso de número de teléfono y confirmación mediante código recibido</li><li>Agregar método de pago con tarjeta de crédito</li><li>Envío de mensaje al conductor</li><li>Solicitud de manta y pañuelos</li><li>Pedido de helados</li><li>Confirmación final de pedido de taxi</li></ul><br>El objetivo es garantizar que los distintos componentes de la aplicación funcionen correctamente y que los flujos críticos de usuario estén cubiertos por pruebas automatizadas.<br><br><strong>Tecnologías y Herramientas Utilizadas:</strong><br><br>• Python<br>• Selenium: para automatización de pruebas web.<br>• WebDriver Chrome: interacción con navegador Chrome.<br>• Page Object Model (POM): organización del código por páginas/componentes.<br>• ActionChains y JavaScript Execution: para manejar interacciones complejas.<br>• WebDriverWait y Expected Conditions (EC): para sincronización de elementos dinámicos.</p>
         
         <div class="project-media">
           <div class="project-video">
@@ -81,9 +81,9 @@
       </div>
 
       <div id="p2" class="project hidden">
-        <h3 data-key="p2_title">Validación de APIs con Postman</h3>
+        <h3 data-key="p2_title">Urban Grocers / Automatización de pruebas de APIs con Python utilizando la librería Requests</h3>
         <p data-key="p2_desc">
-          Colección de pruebas automatizadas para validar endpoints REST y analizar respuestas JSON.
+          Este proyecto implementa la automatización de pruebas para la API de <strong>Urban Grocers</strong>.<br><br>El objetivo principal es comprobar la creación de kits de productos asociados a un usuario, validando específicamente el campo <strong>name</strong> en la solicitud de creación del kit, de acuerdo con una lista de comprobación de pruebas positivas y negativas.<br><br><strong>Tecnologías y Técnicas Utilizadas:</strong><br><br><ul><li><strong>Python:</strong> Lenguaje de programación principal utilizado para escribir los casos de prueba.</li><li><strong>Pytest:</strong> Framework de testing que permite organizar, ejecutar y parametrizar pruebas de manera eficiente.</li><li><strong>@pytest.mark.parametrize:</strong> Genera múltiples pruebas independientes a partir de diferentes entradas, evitando bucles y logrando reportes más claros.</li><li><strong>Decoradores personalizados (@pytest.mark.positive, @pytest.mark.negative):</strong> Permiten agrupar y ejecutar subconjuntos de pruebas (smoke, regression, etc.).</li><li><strong>Requests:</strong> Librería para enviar solicitudes HTTP a la API de Urban Grocers (POST con body y headers).</li><li><strong>Logging:</strong> Módulo estándar de Python utilizado para registrar información detallada de las pruebas (status, valores de entrada/salida), ofreciendo mayor control y profesionalismo en comparación con <code>print</code>.</li></ul><br><strong>Buenas Prácticas de Pruebas Automáticas:</strong><br><br><ul><li>Separación de pruebas positivas (valores válidos) y negativas (valores inválidos).</li><li>Validaciones con <code>assert</code> para comprobar el código de estado HTTP y la estructura/valores del cuerpo de la respuesta.</li><li>Mensajes de error descriptivos para identificar rápidamente qué caso falló y por qué.</li></ul>
         </p>
       </div>
 
