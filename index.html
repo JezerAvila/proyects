@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Jezer Ávila</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+  <h1 id="site-title">Jezer Avila</h1>
+
+  <!-- Botones de menú -->
+  <button class="menu-toggle open-menu">☰</button>
+  <button class="menu-toggle close-menu hidden">✕</button>
+
+  <!-- Menú principal -->
+  <nav class="nav-links">
+    <button id="btn-about" data-key="btn_about">Sobre mí</button>
+    <button id="btn-projects" data-key="btn_projects">Proyectos</button>
+    <button id="theme-toggle">🌙</button>
+    <select id="lang-select">
+      <option value="es">ES</option>
+      <option value="en">EN</option>
+    </select>
+  </nav>
+</header>
+
+
+
+  <main>
+    <section id="about" class="visible">
+      <h2 data-key="about_title">Sobre mí</h2>
+      <img src="assets/images/perfil.jpeg" alt="Foto de perfil" class="perfil" />
+      <p data-key="about_text"></p>
+      <p data-key="contact_text"></p>
+      <div class="social-icons">
+        <a href="https://github.com/JezerAvila?tab=repositories" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jezer-avila-cervantes/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/jezeravila/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    </section>
+
+    <section id="projects" class="hidden">
+      <h2 data-key="projects_title">Proyectos</h2>
+
+      <div class="project-menu">
+        <button class="project-btn" data-project="p1" data-key="project1_btn">Proyecto 1</button>
+        <button class="project-btn" data-project="p2" data-key="project2_btn">Proyecto 2</button>
+        <button class="project-btn" data-project="p3" data-key="project3_btn">Proyecto 3</button>
+      </div>
+
+      <div id="p1" class="project visible">
+        <h3 data-key="p1_title">Automatización de pruebas con Selenium</h3>
+        <p data-key="p1_desc"></p>
+        
+        <div class="project-media">
+          <div class="project-video">
+            <video controls width="100%">
+              <source src="assets/videos/videop1.mp4" type="video/mp4">
+              <img src="assets/images/proyecto1.png" alt="Proyecto 1" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+          <div class="project-code">
+            <a href="https://github.com/JezerAvila/qa-project-Urban-Routes-es" target="_blank"><br><br>
+              <img src="assets/images/p1code.png" alt="Código del proyecto Urban Routes" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="p2" class="project hidden">
+        <h3 data-key="p2_title">Validación de APIs con Postman</h3>
+        <p data-key="p2_desc">
+          Colección de pruebas automatizadas para validar endpoints REST y analizar respuestas JSON.
+        </p>
+      </div>
+
+      <div id="p3" class="project hidden">
+        <h3 data-key="p3_title">Pequeños proyectos personales</h3>
+        <p data-key="p3_desc">
+          Experimentos con HTML, CSS y JavaScript para fortalecer mi comprensión del desarrollo web.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Jezer Ávila</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

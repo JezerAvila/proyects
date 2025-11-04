@@ -1,0 +1,249 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #e5e5e5;
+  --accent-color: #00bcd4;
+}
+
+body.light {
+  --bg-color: #f4f4f4;
+  --text-color: #222;
+  --accent-color: #0077b6;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: var(--bg-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--accent-color);
+  z-index: 10;
+}
+
+nav button,
+nav select {
+  margin-left: 8px;
+  background: none;
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+nav button:hover,
+nav select:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: var(--accent-color);
+}
+
+.perfil {
+  width: 150px;
+  border-radius: 10%;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid var(--accent-color);
+}
+
+.project-menu {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.project-btn {
+  margin: 5px;
+  border: 1px solid var(--accent-color);
+  background: none;
+  color: var(--text-color);
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+button.active {
+  background-color: var(--accent-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+section {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.visible {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid var(--accent-color);
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+nav button.active {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* --- Estilos generales --- */
+nav.nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+/* ===  BLOQUE DE MENÚ HAMBURGUESA === */
+
+/* Botón abrir menú (hamburguesa) */
+.open-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 36px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 20;
+  color: var(--text-color);
+  font-size: 1.8rem; /* ⬅️ ESTA LÍNEA agranda el ícono ☰ */
+}
+
+/* Las tres líneas del menú */
+.open-menu span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: currentColor; /* hereda color actual del texto */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  color: var(--text-color); /* aseguro contraste según el tema */
+}
+
+/* Botón cerrar menú (X) */
+.close-menu {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 21;
+}
+
+/* --- Ajustes responsivos --- */
+@media (max-width: 600px) {
+  .open-menu {
+    display: flex;
+    color: var(--text-color); /* hereda color según tema */
+  }
+
+  nav.nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: var(--bg-color);
+    padding: 15px;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+  }
+
+  nav.nav-links.show {
+    display: flex;
+    opacity: 1;
+  }
+
+  .close-menu {
+    display: block;
+    color: var(--text-color);
+  }
+}
+
+/* --- Diseño en dos columnas para pantallas grandes --- */
+@media (min-width: 768px) {
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+    align-items: center; /* centra verticalmente */
+    gap: 20px;
+  }
+
+  #about img.perfil {
+    width: 220px;
+    margin: 0 auto; /* centra en su columna */
+  }
+
+  #about p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+
+  #about h2 {
+    grid-column: 1 / -1; /* el título ocupa ambas columnas */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin: 0 10px;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}

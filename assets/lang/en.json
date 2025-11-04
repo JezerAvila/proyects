@@ -1,0 +1,17 @@
+{
+"btn_about": "About Me",
+  "btn_projects": "Projects",
+  "project1_btn": "Project 1",
+  "project2_btn": "Project 2",
+  "project3_btn": "Project 3",
+  "about_title": "About Me",
+  "about_text": "Thank you so much for getting here! I'm Jezer.<br><br>After several years working in technical support within call centers, I realized I needed a change. I had always been interested in technology and programming, so driven by curiosity, I decided to give a chance to those internet ads that promise to “work from home doing what you love.”<br><br>That’s how I discovered the world of Quality Assurance and started my training at the TripleTen bootcamp, where I gained hands-on experience in test automation with Python and Selenium, API validation using Postman, and bug reporting with Jira, developing projects in each sprint.<br><br>In addition, on my own, I have learned HTML, CSS, JavaScript, Java, React, SQL, and Git, creating small personal projects to strengthen my understanding of web development and better grasp the entire software process.<br><br>Today, my focus is on QA Testing, with a special interest in automation, functional testing, and delivering high-quality software. I’m looking for opportunities where I can apply my knowledge, keep learning, and contribute to developing products that not only work well—but make users’ lives a little easier.",
+  "contact_text": "I'd really love to get in touch with you to hear your feedback or just say hello! 😀<br><br>REACH ME ON:<br><br>jezeravila@gmail.com | Phone: (+52) 56-1859-8488",
+  "projects_title": "Projects",
+  "p1_title": "Test Automation with Selenium",
+  "p1_desc": "Project where I implemented Python scripts to validate key workflows.",
+  "p2_title": "API Validation with Postman",
+  "p2_desc": "Automated collection to validate REST endpoints.",
+  "p3_title": "Personal Projects",
+  "p3_desc": "Small projects using HTML, CSS, and JS to strengthen my web skills."
+}
